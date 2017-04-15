@@ -30,7 +30,7 @@ composer require drupal/devel:~1.0
 
 **Step 1: Get Drupal Docker Development Environment**
 
-The best and easiest way to get your site running on an amazee.io server is to first to get it running inside our [Drupal Docker Development Environment](../local_docker_development/local_docker_development.md). The Docker Environment is exactly the same as the amazee.io servers, so if your site is running inside the Docker Environment, it will also run on the amazee.io servers.
+The best and easiest way to get your site running on an amazee.io server is to first to get it running inside our [Drupal Docker Development Environment](https://docs.amazee.io/local_docker_development/local_docker_development.html). The Docker Environment is exactly the same as the amazee.io servers, so if your site is running inside the Docker Environment, it will also run on the amazee.io servers.
 
 Start the `pygmy` service
 
@@ -53,7 +53,8 @@ $ docker-compose up -d
 Creating drupalro.docker.amazee.io
 ```
 
-Using this command you can `ssh` into the Drupal container, where you can use `drush` when neded
+If you want to use **drush**, you need to do it from within the drupal container.
+You can `ssh` into the Drupal container using the following command:
 
 ```
 docker exec -itu drupal drupalro.docker.amazee.io bash
