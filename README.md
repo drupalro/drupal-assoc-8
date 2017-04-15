@@ -1,6 +1,6 @@
 # Drupal Association - Romania
 
-This repository contains the Drupal Association - Romania website.
+This repository contains the **Drupal Association - Romania** website.
 The website is built using Drupal 8 with a basic Composer workflow.
 
 ## Local environment setup
@@ -28,17 +28,17 @@ composer require drupal/devel:~1.0
 
 ### Amazee.io local Docker environment
 
-- Step 1: Get Drupal Docker Development Environment
+**Step 1: Get Drupal Docker Development Environment**
 
 The best and easiest way to get your site running on an amazee.io server is to first to get it running inside our [Drupal Docker Development Environment](../local_docker_development/local_docker_development.md). The Docker Environment is exactly the same as the amazee.io servers, so if your site is running inside the Docker Environment, it will also run on the amazee.io servers.
 
-Start the pygmy service
+Start the `pygmy` service
 
 ```
 pygmy up
 ```
 
-- Step 2: Start the Drupal Docker containers
+**Step 2: Start the Drupal Docker containers**
 
 Using `docker-compose` start the docker containers as specified in the `docker-compose.yml` configuration file.
 
@@ -59,7 +59,7 @@ Using this command you can `ssh` into the Drupal container, where you can use `d
 docker exec -itu drupal drupalro.docker.amazee.io bash
 ```
 
-- Step 3: Install Drupal using the `Drupal Association Romania` (`da`) profile
+**Step 3: Install Drupal using the `Drupal Association Romania` (`da`) profile**
 
 Access the the website using this URL: [http://drupalro.docker.amazee.io](http://drupalro.docker.amazee.io)
 
