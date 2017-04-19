@@ -1,4 +1,4 @@
-sitegroup: drupalro
+sitegroup: drupal_org_ro
 
 deploy_tasks:
   development:
