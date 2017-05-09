@@ -1,0 +1,24 @@
+uuid: c2f27e7a-7eb1-4200-a4ab-76768cfe3b39
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - da
+id: mainnavigation
+theme: da
+region: main_navigation
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }
