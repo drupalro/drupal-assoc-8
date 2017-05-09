@@ -1,0 +1,22 @@
+uuid: 74811727-43ab-4276-a89e-4debd79181c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - nexus
+_core:
+  default_config_hash: Mom9XiTt8HKCXYL7u3QPGtw-rplWlKRR0-j47S2Z5oU
+id: nexus_search
+theme: nexus
+region: sidebar_first
+weight: 20
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }
