@@ -1,0 +1,22 @@
+uuid: 3e701d88-cde0-4613-a3d5-0d2c298ccf56
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - nexus
+_core:
+  default_config_hash: NSLeDLaxx7fs54LMGuOIoOUVsxMY9ON0DQ0eM_ATg7M
+id: nexus_help
+theme: nexus
+region: help
+weight: 10
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }
