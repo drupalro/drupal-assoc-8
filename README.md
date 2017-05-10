@@ -1,15 +1,11 @@
-# Composer template for Drupal projects
+# Drupal Association - Romania
 
-[![Build Status](https://travis-ci.org/drupal-composer/drupal-project.svg?branch=8.x)](https://travis-ci.org/drupal-composer/drupal-project)
+This repository contains the **Drupal Association - Romania** website.
+The website is built using Drupal 8 with a basic Composer workflow.
 
-This project template should provide a kickstart for managing your site
-dependencies with [Composer](https://getcomposer.org/).
+## Local environment setup
 
-If you want to know how to use it as replacement for
-[Drush Make](https://github.com/drush-ops/drush/blob/master/docs/make.md) visit
-the [Documentation on drupal.org](https://www.drupal.org/node/2471553).
-
-## Usage
+### Composer
 
 First you need to [install composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx).
 
@@ -17,23 +13,56 @@ First you need to [install composer](https://getcomposer.org/doc/00-intro.md#ins
 You might need to replace `composer` with `php composer.phar` (or similar) 
 for your setup.
 
-After that you can create the project:
+After that you need to initialize the composer dependencies for the project:
 
 ```
-composer create-project drupal-composer/drupal-project:8.x-dev some-dir --stability dev --no-interaction
+composer install
 ```
 
 With `composer require ...` you can download new dependencies to your 
 installation.
 
 ```
-cd some-dir
 composer require drupal/devel:~1.0
 ```
 
-The `composer create-project` command passes ownership of all files to the 
-project that is created. You should create a new git repository, and commit 
-all files not excluded by the .gitignore file.
+### Amazee.io local Docker environment
+
+**Step 1: Get Drupal Docker Development Environment**
+
+The best and easiest way to get your site running on an amazee.io server is to first to get it running inside our [Drupal Docker Development Environment](https://docs.amazee.io/local_docker_development/pygmy.html). The Docker Environment is exactly the same as the amazee.io servers, so if your site is running inside the Docker Environment, it will also run on the amazee.io servers.
+
+Start the `pygmy` service
+
+```
+pygmy up
+```
+
+**Step 2: Start the Drupal Docker containers**
+
+Using `docker-compose` start the docker containers as specified in the `docker-compose.yml` configuration file.
+
+```
+docker-compose up -d
+```
+
+The required containers will be initialized and terminal output should end in something like this:
+
+```
+$ docker-compose up -d
+Creating drupalro.docker.amazee.io
+```
+
+If you want to use **drush**, you need to do it from within the drupal container.
+You can `ssh` into the Drupal container using the following command:
+
+```
+docker exec -itu drupal drupalro.docker.amazee.io bash
+```
+
+**Step 3: Install Drupal using the `Drupal Association Romania` (`da`) profile**
+
+Access the the website using this URL: [http://drupalro.docker.amazee.io](http://drupalro.docker.amazee.io)
 
 ## What does the template do?
 
@@ -73,12 +102,6 @@ Follow the steps below to update your core files.
    of a [three-way merge tool such as kdiff3](http://www.gitshah.com/2010/12/how-to-setup-kdiff-as-diff-tool-for-git.html). This setup is not necessary if your changes are simple; 
    keeping all of your modifications at the beginning or end of the file is a 
    good strategy to keep merges easy.
-
-## Generate composer.json from existing project
-
-With using [the "Composer Generate" drush extension](https://www.drupal.org/project/composer_generate)
-you can now generate a basic `composer.json` file from an existing project. Note
-that the generated `composer.json` might differ from this project's file.
 
 
 ## FAQ

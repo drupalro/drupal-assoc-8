@@ -750,6 +750,26 @@ $settings['file_scan_ignore_directories'] = [
 ];
 
 /**
+ * amazee.io configuration.
+ */
+if (getenv('AMAZEEIO_SITENAME')){
+  $databases['default']['default'] = array(
+    'driver' => 'mysql',
+    'database' => getenv('AMAZEEIO_SITENAME'),
+    'username' => getenv('AMAZEEIO_DB_USERNAME'),
+    'password' => getenv('AMAZEEIO_DB_PASSWORD'),
+    'host' => getenv('AMAZEEIO_DB_HOST'),
+    'port' => getenv('AMAZEEIO_DB_PORT'),
+    'prefix' => '',
+  );
+}
+
+// amazee.io Base URL.
+if (getenv('AMAZEEIO_BASE_URL')) {
+  $base_url = getenv('AMAZEEIO_BASE_URL');
+}
+
+/**
  * Load local development override configuration, if available.
  *
  * Use settings.local.php to override variables on secondary (staging,
@@ -759,7 +779,6 @@ $settings['file_scan_ignore_directories'] = [
  *
  * Keep this code block at the end of this file to take full effect.
  */
-#
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
