@@ -1,0 +1,10 @@
+uuid: 5fd4caba-6360-4be2-8947-05418e8f4ecb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.event_listing
+label: 'Event Listing'
+targetEntityType: node
+cache: true
