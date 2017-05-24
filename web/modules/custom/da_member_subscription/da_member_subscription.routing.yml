@@ -1,0 +1,18 @@
+entity.da_subscription.add_form:
+  path: '/da_subscription/add'
+  defaults:
+    _entity_form: da_subscription.add
+    _title: 'Add LOL'
+  requirements:
+    _permission: 'access content'
+
+entity.da_subscription.canonical:
+  path: '/da_subscription/{da_subscription}'
+  defaults:
+  # Calls the view controller, defined in the annotation of the contact entity
+    _entity_view: 'da_subscription'
+    _title: 'Subscription Content'
+  requirements:
+  # Calls the access controller of the entity, $operation 'view'
+   # _entity_access: 'content_entity_example_contact.view'
+   _permission: 'access content'
