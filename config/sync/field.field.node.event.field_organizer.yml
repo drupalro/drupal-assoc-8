@@ -1,0 +1,23 @@
+uuid: 71a9baa4-2b81-4162-b2ba-d078e2f1c629
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organizer
+    - node.type.event
+  module:
+    - link
+id: node.event.field_organizer
+field_name: field_organizer
+entity_type: node
+bundle: event
+label: Organizer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link
