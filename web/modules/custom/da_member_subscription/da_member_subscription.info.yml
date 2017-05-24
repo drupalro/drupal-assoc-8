@@ -1,0 +1,5 @@
+name: Drupal Association Member Subscription
+type: module
+description: 
+package:
+core: 8.x
