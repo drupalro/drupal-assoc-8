@@ -1,0 +1,19 @@
+uuid: 5227a286-f98e-48fa-9a8d-922c9d81d4d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - google_map_field
+    - node
+id: node.field_location
+field_name: field_location
+entity_type: node
+type: google_map_field
+settings: {  }
+module: google_map_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

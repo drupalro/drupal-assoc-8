@@ -1,0 +1,73 @@
+uuid: 43b0c802-7aed-4fd0-8d49-f66cc0ad99e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.event_listing
+    - field.field.node.event.body
+    - field.field.node.event.field_ending_date
+    - field.field.node.event.field_event_type
+    - field.field.node.event.field_location
+    - field.field.node.event.field_organizer
+    - field.field.node.event.field_starting_date
+    - node.type.event
+  module:
+    - datetime
+    - link
+    - text
+    - user
+id: node.event.event_listing
+targetEntityType: node
+bundle: event
+mode: event_listing
+content:
+  body:
+    label: inline
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 400
+    third_party_settings: {  }
+    region: content
+  field_ending_date:
+    weight: 3
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_event_type:
+    type: entity_reference_label
+    weight: 5
+    region: content
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_organizer:
+    type: link
+    weight: 4
+    region: content
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_starting_date:
+    weight: 2
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+hidden:
+  field_location: true
+  langcode: true
+  links: true
