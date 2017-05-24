@@ -13,6 +13,6 @@ name: Event
 type: event
 description: 'This content type is used to describe Drupal-related events.'
 help: ''
-new_revision: true
+new_revision: false
 preview_mode: 1
 display_submitted: false

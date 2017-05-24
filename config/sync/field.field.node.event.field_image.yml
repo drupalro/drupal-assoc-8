@@ -1,14 +1,14 @@
-uuid: f78767ea-7252-43a3-b012-86ae3f958c71
+uuid: f0b8b2aa-da99-4153-8016-620a478e1fb2
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_event_image
+    - field.storage.node.field_image
     - node.type.event
   module:
     - image
-id: node.event.field_event_image
-field_name: field_event_image
+id: node.event.field_image
+field_name: field_image
 entity_type: node
 bundle: event
 label: 'Event Image'

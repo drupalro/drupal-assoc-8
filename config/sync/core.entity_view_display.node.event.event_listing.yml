@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.node.event_listing
     - field.field.node.event.body
     - field.field.node.event.field_ending_date
-    - field.field.node.event.field_event_image
     - field.field.node.event.field_event_type
     - field.field.node.event.field_location
     - field.field.node.event.field_organizer
@@ -14,8 +13,6 @@ dependencies:
     - node.type.event
   module:
     - datetime
-    - google_map_field
-    - image
     - link
     - text
     - user
@@ -26,9 +23,10 @@ mode: event_listing
 content:
   body:
     label: inline
-    type: text_default
+    type: text_summary_or_trimmed
     weight: 1
-    settings: {  }
+    settings:
+      trim_length: 400
     third_party_settings: {  }
     region: content
   field_ending_date:
@@ -40,33 +38,17 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_event_image:
-    weight: 0
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
   field_event_type:
     type: entity_reference_label
-    weight: 6
+    weight: 5
     region: content
     label: inline
     settings:
       link: true
     third_party_settings: {  }
-  field_location:
-    weight: 4
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: google_map_field_default
-    region: content
   field_organizer:
     type: link
-    weight: 5
+    weight: 4
     region: content
     label: inline
     settings:
@@ -86,5 +68,6 @@ content:
     type: datetime_default
     region: content
 hidden:
+  field_location: true
   langcode: true
   links: true

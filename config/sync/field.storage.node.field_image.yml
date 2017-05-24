@@ -1,4 +1,4 @@
-uuid: 13fe8473-6ec2-4ffa-89b1-359191114a57
+uuid: aa916781-af9b-413c-a2bd-91fa1fba2497
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     - file
     - image
     - node
-id: node.field_event_image
-field_name: field_event_image
+id: node.field_image
+field_name: field_image
 entity_type: node
 type: image
 settings:

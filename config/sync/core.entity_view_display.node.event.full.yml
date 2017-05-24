@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.node.full
     - field.field.node.event.body
     - field.field.node.event.field_ending_date
-    - field.field.node.event.field_event_image
     - field.field.node.event.field_event_type
     - field.field.node.event.field_location
     - field.field.node.event.field_organizer
@@ -15,7 +14,6 @@ dependencies:
   module:
     - datetime
     - google_map_field
-    - image
     - link
     - text
     - user
@@ -39,15 +37,6 @@ content:
       timezone_override: ''
     third_party_settings: {  }
     type: datetime_default
-    region: content
-  field_event_image:
-    weight: 3
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
     region: content
   field_event_type:
     type: entity_reference_label
