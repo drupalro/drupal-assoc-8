@@ -1,0 +1,20 @@
+uuid: 9a33f604-7cba-4335-aa92-2f075a9515a8
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - user
+id: user.field_birth_date
+field_name: field_birth_date
+entity_type: user
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
