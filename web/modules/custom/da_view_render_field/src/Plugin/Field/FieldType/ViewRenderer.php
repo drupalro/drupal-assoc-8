@@ -40,7 +40,8 @@ class ViewRenderer extends FieldItemBase {
    */
   public static function propertyDefinitions(FieldStorageDefinitionInterface $field_definition) {
     $properties['view_id'] = DataDefinition::create('string')
-      ->setLabel(t('View ID'));
+      ->setLabel(t('View ID'))
+      ->addConstraint('valid_view_display');
 
     return $properties;
   }

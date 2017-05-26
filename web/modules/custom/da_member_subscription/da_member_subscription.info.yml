@@ -1,5 +1,4 @@
 name: Drupal Association Member Subscription
 type: module
-description: 
-package:
+package: Drupal Association
 core: 8.x

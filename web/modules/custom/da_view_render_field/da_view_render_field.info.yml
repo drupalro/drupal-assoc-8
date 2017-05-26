@@ -1,3 +1,4 @@
 name: Drupal Association View Render Field
 type: module
+package: Drupal Association
 core: 8.x
