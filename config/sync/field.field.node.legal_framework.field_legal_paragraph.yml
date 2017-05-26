@@ -1,0 +1,30 @@
+uuid: d59da1a8-385d-468a-b4c3-79ca9fc1e600
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legal_paragraph
+    - node.type.legal_framework
+    - paragraphs.paragraphs_type.legal_paragraph
+  module:
+    - entity_reference_revisions
+id: node.legal_framework.field_legal_paragraph
+field_name: field_legal_paragraph
+entity_type: node
+bundle: legal_framework
+label: legal_paragraph
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      legal_paragraph: legal_paragraph
+    target_bundles_drag_drop:
+      legal_paragraph:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

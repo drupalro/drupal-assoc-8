@@ -1,0 +1,11 @@
+uuid: 2a55bf3e-ee7a-4392-8be5-45688d4b79a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.legal_framework
+id: node.legal_framework
+target_entity_type_id: node
+target_bundle: legal_framework
+default_langcode: site_default
+language_alterable: false

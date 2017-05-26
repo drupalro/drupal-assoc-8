@@ -1,0 +1,35 @@
+uuid: 69266cbc-4a7d-48b5-aa87-3ed822c0deff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.legal_paragraph.field_body
+    - field.field.paragraph.legal_paragraph.field_title
+    - paragraphs.paragraphs_type.legal_paragraph
+  module:
+    - text
+id: paragraph.legal_paragraph.default
+targetEntityType: paragraph
+bundle: legal_paragraph
+mode: default
+content:
+  field_body:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

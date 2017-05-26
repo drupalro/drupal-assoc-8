@@ -1,0 +1,23 @@
+uuid: 32c3608f-82c4-4b82-8a3b-759747ae352a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_board_members
+    - node.type.about_us
+  module:
+    - da_view_render_field
+id: node.about_us.field_board_members
+field_name: field_board_members
+entity_type: node
+bundle: about_us
+label: 'Board members'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    view_id: 'board_members:default'
+default_value_callback: ''
+settings: {  }
+field_type: field_view_renderer
