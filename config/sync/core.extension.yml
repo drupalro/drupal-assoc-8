@@ -9,7 +9,7 @@ module:
   config: 0
   contact: 0
   contextual: 0
-  da_view_render_field: 0
+  da_view_reference_field: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0

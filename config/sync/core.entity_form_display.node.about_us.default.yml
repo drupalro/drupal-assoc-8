@@ -8,7 +8,7 @@ dependencies:
     - field.field.node.about_us.field_legal_framework
     - node.type.about_us
   module:
-    - da_view_render_field
+    - da_view_reference_field
     - path
     - text
 id: node.about_us.default
@@ -35,7 +35,7 @@ content:
     weight: 34
     settings: {  }
     third_party_settings: {  }
-    type: field_view_renderer_widget
+    type: field_view_reference_widget
     region: content
   field_legal_framework:
     weight: 33

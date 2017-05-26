@@ -1,25 +1,25 @@
 <?php
 
-namespace Drupal\da_view_render_field\Plugin\Field\FieldWidget;
+namespace Drupal\da_view_reference_field\Plugin\Field\FieldWidget;
 
 use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Field\WidgetBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Widget implementation of 'field_view_renderer'.
+ * Widget implementation of 'field_view_reference'.
  *
  * @FieldWidget(
- *   id = "field_view_renderer_widget",
- *   module = "da_view_render_field",
+ *   id = "field_view_reference_widget",
+ *   module = "da_view_reference_field",
  *   label = @Translation("View name and display"),
  *   description = @Translation("Format: 'view_machine_name:view_display'"),
  *   field_types = {
- *     "field_view_renderer"
+ *     "field_view_reference"
  *   }
  * )
  */
-class ViewRendererWidget extends WidgetBase {
+class ViewReferenceWidget extends WidgetBase {
 
   /**
    * @inheritdoc

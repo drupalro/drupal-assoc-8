@@ -1,11 +1,11 @@
 <?php
 
-namespace Drupal\da_view_render_field\Plugin\Validation\Constraint;
+namespace Drupal\da_view_reference_field\Plugin\Validation\Constraint;
 
 use Symfony\Component\Validator\Constraint;
 
 /**
- * Checks if the given view + display are valid.
+ * Checks if the given view & display are valid.
  *
  * @Constraint(
  *   id = "valid_view_display",
@@ -26,6 +26,6 @@ class ViewFieldConstraint extends Constraint {
    * @inheritdoc
    */
   public function validatedBy() {
-    return '\Drupal\da_view_render_field\Plugin\Validation\Constraint\ViewFieldValidator';
+    return '\Drupal\da_view_reference_field\Plugin\Validation\Constraint\ViewFieldValidator';
   }
 }

@@ -1,24 +1,24 @@
 <?php
 
-namespace Drupal\da_view_render_field\Plugin\Field\FieldType;
+namespace Drupal\da_view_reference_field\Plugin\Field\FieldType;
 
 use Drupal\Core\Field\FieldItemBase;
 use Drupal\Core\Field\FieldStorageDefinitionInterface;
 use Drupal\Core\TypedData\DataDefinition;
 
 /**
- * View renderer plugin definition.
+ * View reference plugin definition.
  *
  * @FieldType(
- *   id = "field_view_renderer",
- *   label = @Translation("View Renderer"),
- *   module = "da_view_render_field",
+ *   id = "field_view_reference",
+ *   label = @Translation("View Reference"),
+ *   module = "da_view_reference_field",
  *   description = @Translation("Render a given view"),
- *   default_widget = "field_view_renderer_widget",
- *   default_formatter = "field_view_renderer_display"
+ *   default_widget = "field_view_reference_widget",
+ *   default_formatter = "field_view_reference_display"
  * )
  */
-class ViewRenderer extends FieldItemBase {
+class ViewReference extends FieldItemBase {
 
   /**
    * @inheritdoc

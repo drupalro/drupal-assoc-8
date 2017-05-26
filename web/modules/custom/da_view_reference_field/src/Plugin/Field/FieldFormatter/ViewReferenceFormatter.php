@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\da_view_render_field\Plugin\Field\FieldFormatter;
+namespace Drupal\da_view_reference_field\Plugin\Field\FieldFormatter;
 
 use Drupal\Console\Bootstrap\Drupal;
 use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
@@ -10,18 +10,18 @@ use Drupal\Core\Field\FormatterBase;
 use Drupal\Core\Field\FieldItemListInterface;
 
 /**
- * Display implementation of 'field_view_renderer'.
+ * Display implementation of 'field_view_reference'.
  *
  * @FieldFormatter(
- *   id = "field_view_renderer_display",
- *   module = "da_view_render_field",
+ *   id = "field_view_reference_display",
+ *   module = "da_view_reference_field",
  *   label = @Translation("View Display"),
  *   field_types = {
- *     "field_view_renderer"
+ *     "field_view_reference"
  *   }
  * )
  */
-class ViewRendererFormatter extends FormatterBase {
+class ViewReferenceFormatter extends FormatterBase {
 
   /**
    * @inheritdoc
