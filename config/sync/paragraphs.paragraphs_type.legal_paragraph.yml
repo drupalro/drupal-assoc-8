@@ -1,0 +1,7 @@
+uuid: 013493b8-1900-4c0d-8031-f14afc466c8f
+langcode: en
+status: true
+dependencies: {  }
+id: legal_paragraph
+label: legal_paragraph
+behavior_plugins: {  }
