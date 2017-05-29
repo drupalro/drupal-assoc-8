@@ -1,0 +1,48 @@
+uuid: 58507f34-1311-4317-8c06-7a5e6fa6501f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.about_us.body
+    - field.field.node.about_us.field_board_members
+    - field.field.node.about_us.field_legal_framework
+    - node.type.about_us
+  module:
+    - da_view_reference_field
+    - text
+    - user
+id: node.about_us.default
+targetEntityType: node
+bundle: about_us
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_board_members:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: field_view_reference_display
+    region: content
+  field_legal_framework:
+    weight: 103
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

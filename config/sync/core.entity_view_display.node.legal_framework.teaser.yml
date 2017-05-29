@@ -1,0 +1,21 @@
+uuid: 8d62ec9a-4023-4598-b238-9de17dafac1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.legal_framework.field_legal_paragraph
+    - node.type.legal_framework
+  module:
+    - user
+id: node.legal_framework.teaser
+targetEntityType: node
+bundle: legal_framework
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_legal_paragraph: true
+  langcode: true
