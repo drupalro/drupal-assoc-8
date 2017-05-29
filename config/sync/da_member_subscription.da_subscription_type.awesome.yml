@@ -1,0 +1,7 @@
+uuid: 63481d6b-3fb7-49ab-8ea4-440b23381b28
+langcode: en
+status: true
+dependencies: {  }
+id: awesome
+name: Awesome
+price: !!float 12

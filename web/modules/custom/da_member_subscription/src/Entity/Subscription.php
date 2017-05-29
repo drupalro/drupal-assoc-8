@@ -16,10 +16,10 @@ use Drupal\Core\StringTranslation\TranslatableMarkup;
  *   handlers = {
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
  *     "form" = {
- *       "add" = "Drupal\da_member_subscription\Form\SubscriptionAddForm"
+ *       "default" = "Drupal\da_member_subscription\Form\SubscriptionAddForm"
  *     },
  *   },
- *   bundle_entity_type = "subscription_type",
+ *   bundle_entity_type = "da_subscription_type",
  *   base_table = "da_subscription",
  *   entity_keys = {
  *     "id" = "id",
@@ -32,7 +32,9 @@ use Drupal\Core\StringTranslation\TranslatableMarkup;
  */
 class Subscription extends ContentEntityBase {
 
-
+  /**
+   * {@inheritdoc}
+   */
   public static function baseFieldDefinitions(EntityTypeInterface $entity_type) {
     $fields = [];
 
@@ -49,10 +51,20 @@ class Subscription extends ContentEntityBase {
     }
 
     if ($entity_type->hasKey('uid')) {
-      $fields[$entity_type->getKey('uid')] = BaseFieldDefinition::create('integer')
+      $fields[$entity_type->getKey('uid')] = BaseFieldDefinition::create('entity_reference')
         ->setLabel(new TranslatableMarkup('UID'))
         ->setReadOnly(TRUE)
-        ->setSetting('unsigned', TRUE);
+        ->setSetting('target_type', 'user');
+    }
+
+    if ($entity_type->hasKey('type')) {
+      if ($bundle_entity_type_id = $entity_type->getBundleEntityType()) {
+        $fields[$entity_type->getKey('type')] = BaseFieldDefinition::create('entity_reference')
+          ->setLabel($entity_type->getBundleLabel())
+          ->setSetting('target_type', $bundle_entity_type_id)
+          ->setRequired(TRUE)
+          ->setReadOnly(TRUE);
+      }
     }
 
     if ($entity_type->hasKey('created')) {

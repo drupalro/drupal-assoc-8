@@ -1,0 +1,7 @@
+uuid: ab2fafaa-e540-4b32-9da9-115c6f18b071
+langcode: en
+status: true
+dependencies: {  }
+id: awesome_2
+name: 'Awesome 2'
+price: !!float 14

@@ -1,0 +1,4 @@
+services:
+  da_member_subscription.member_subscriber:
+    class: Drupal\da_member_subscription\Service\MemberSubscriber
+    arguments: ['@entity_type.manager', '@current_user']

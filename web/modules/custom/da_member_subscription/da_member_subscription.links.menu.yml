@@ -1,0 +1,5 @@
+da_member_subscription.subscription_types:
+  title: 'Subscription Types'
+  parent: system.admin_structure
+  description: 'Manage your subscription types.'
+  route_name: entity.da_subscription_type.collection
