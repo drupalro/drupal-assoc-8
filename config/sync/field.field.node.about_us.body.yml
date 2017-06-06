@@ -1,0 +1,22 @@
+uuid: b13b5d4f-d34f-4279-802f-210b2ee71d3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.about_us
+  module:
+    - text
+id: node.about_us.body
+field_name: body
+entity_type: node
+bundle: about_us
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

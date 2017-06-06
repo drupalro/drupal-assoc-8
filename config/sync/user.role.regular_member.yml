@@ -1,0 +1,9 @@
+uuid: fa9261de-8e7d-473c-8b3b-0a27f29fb521
+langcode: en
+status: true
+dependencies: {  }
+id: regular_member
+label: 'Regular member'
+weight: 3
+is_admin: null
+permissions: {  }
