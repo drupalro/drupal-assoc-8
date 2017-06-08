@@ -1,0 +1,9 @@
+name: 'DA Calendar'
+type: module
+description: 'This module provides the integration of fullcalendar.io library.'
+package: DA
+core: 8.x
+libraries:
+  -da_calendar/fullcalendar
+dependencies:
+  - block
