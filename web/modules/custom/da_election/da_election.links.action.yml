@@ -1,0 +1,5 @@
+entity.da_election.add_form:
+  route_name: entity.da_election.add_form
+  title: 'Add Election'
+  appears_on:
+    - view.election.election_admin_list
