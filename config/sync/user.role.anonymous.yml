@@ -12,3 +12,4 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'search content'
+  - 'view disqus comments'

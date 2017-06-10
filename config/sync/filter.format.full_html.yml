@@ -1,0 +1,14 @@
+uuid: 89da0f45-013e-4dc0-8e8a-3613876554df
+langcode: en
+status: true
+dependencies: {  }
+name: 'Full HTML'
+format: full_html
+weight: 0
+filters:
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
