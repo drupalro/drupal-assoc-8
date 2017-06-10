@@ -21,6 +21,7 @@
         "drupal-composer/drupal-scaffold": "^2.2",
         "drupal/console": "~1.0",
         "drupal/core": "~8.0",
+        "drupal/disqus": "^1.0@RC",
         "drupal/google_map_field": "^1.4",
         "drupal/nexus": "1.0.0-beta1",
         "drupal/paragraphs": "^1.1",

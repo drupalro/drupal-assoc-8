@@ -68,6 +68,7 @@ content:
     type: datetime_default
     region: content
 hidden:
+  field_image: true
   field_location: true
   langcode: true
   links: true

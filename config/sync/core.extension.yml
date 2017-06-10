@@ -15,6 +15,7 @@ module:
   da_member_subscription: 0
   datetime: 0
   dblog: 0
+  disqus: 0
   dynamic_page_cache: 0
   editor: 0
   entity_reference_revisions: 0

@@ -1,17 +1,17 @@
-uuid: 4776092e-d5bb-4b49-8d84-52420b870ea9
+uuid: fc7ac6f9-f68b-46b9-97ea-e60bfc5e7e21
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.about_us.body
-    - node.type.about_us
+    - field.field.node.article.body
+    - node.type.article
   module:
     - text
     - user
-id: node.about_us.teaser
+id: node.article.teaser
 targetEntityType: node
-bundle: about_us
+bundle: article
 mode: teaser
 content:
   body:
@@ -26,6 +26,4 @@ content:
     weight: 100
     region: content
 hidden:
-  field_board_members: true
-  field_legal_framework: true
   langcode: true
