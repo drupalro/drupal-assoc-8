@@ -10,6 +10,7 @@ module:
   contact: 0
   contextual: 0
   da_calendar: 0
+  da_election: 0
   da_view_reference_field: 0
   datetime: 0
   dblog: 0
