@@ -9,7 +9,7 @@ dependencies:
 id: sitebranding
 theme: da
 region: header
-weight: 0
+weight: -2
 provider: null
 plugin: system_branding_block
 settings:
