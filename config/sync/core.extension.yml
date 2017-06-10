@@ -5,7 +5,6 @@ module:
   block: 0
   block_content: 0
   breakpoint: 0
-  checklistapi: 0
   ckeditor: 0
   color: 0
   comment: 0
@@ -46,8 +45,8 @@ module:
   redirect: 0
   redirect_404: 0
   rest: 0
-  search: 0
-  seo_checklist: 0
+  search_api: 0
+  search_api_db: 0
   serialization: 0
   shortcut: 0
   simple_sitemap: 0
