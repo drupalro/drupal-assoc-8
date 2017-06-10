@@ -1,0 +1,13 @@
+da_member_subscription.da_subscription_type.*:
+  type: config_entity
+  label: 'Membership Subscription'
+  mapping:
+    name:
+      type: label
+      label: 'Name'
+    type:
+      type: string
+      label: 'Machine-readable name'
+    price:
+      type: float
+      label: 'Price of the Membership'

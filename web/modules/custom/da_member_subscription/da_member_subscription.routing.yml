@@ -1,10 +1,10 @@
 entity.da_subscription.add_form:
   path: '/da_subscription/add'
   defaults:
-    _entity_form: da_subscription.add
-    _title: 'Add LOL'
+    _entity_form: da_subscription.default
+    _title: 'Add Subscription'
   requirements:
-    _permission: 'access content'
+    _permission: 'administer site configuration'
 
 entity.da_subscription.canonical:
   path: '/da_subscription/{da_subscription}'
@@ -13,6 +13,62 @@ entity.da_subscription.canonical:
     _entity_view: 'da_subscription'
     _title: 'Subscription Content'
   requirements:
-  # Calls the access controller of the entity, $operation 'view'
-   # _entity_access: 'content_entity_example_contact.view'
-   _permission: 'access content'
+    _permission: 'administer site configuration'
+
+entity.da_subscription_type.add_form:
+  path: '/da_subscription/type/add'
+  defaults:
+    _entity_form: da_subscription_type.add
+    _title: 'Add Subscription type'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE
+
+entity.da_subscription_type.edit_form:
+  path: '/da_subscription_type/{da_subscription_type}/edit'
+  defaults:
+    _entity_form: da_subscription_type.edit
+    _title: 'Edit Subscription Type'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE
+
+entity.da_subscription_type.delete_form:
+  path: '/da_subscription_type/{da_subscription_type}/delete'
+  defaults:
+    _entity_form: da_subscription_type.delete
+    _title: 'Delete Subscription Type'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE
+
+entity.da_subscription_type.collection:
+  path: '/admin/structure/subscription-types'
+  defaults:
+    _entity_list: 'da_subscription_type'
+    _title: 'Subscription Types'
+  requirements:
+    _permission: 'administer site configuratio'
+
+da_member_subscription.add:
+  path: '/da_subscription/add/{da_subscription_type}'
+  defaults:
+    _controller: '\Drupal\da_member_subscription\Controller\DaMemberSubscriptionController::add'
+    _title: 'Add LOL1'
+  requirements:
+    _permission: 'access content'
+  options:
+    parameters:
+      da_subscription_type:
+        type: 'entity:da_subscription_type'
+
+da_member_subscription.choose_subscription:
+  path: '/choose-subscription'
+  defaults:
+    _form: '\Drupal\da_member_subscription\Form\ChooseSubscriptionForm'
+    _title: 'Choose Subscription'
+  requirements:
+    _permission: 'access content'
