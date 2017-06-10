@@ -24,6 +24,7 @@
         "drupal/google_map_field": "^1.4",
         "drupal/nexus": "1.0.0-beta1",
         "drupal/paragraphs": "^1.1",
+        "drupal/search_api": "^1.1",
         "drush/drush": "~8.0",
         "webflo/drupal-finder": "^0.2.1",
         "webmozart/path-util": "^2.3"

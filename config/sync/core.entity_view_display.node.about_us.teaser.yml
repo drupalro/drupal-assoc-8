@@ -26,4 +26,6 @@ content:
     weight: 100
     region: content
 hidden:
+  field_board_members: true
+  field_legal_framework: true
   langcode: true
