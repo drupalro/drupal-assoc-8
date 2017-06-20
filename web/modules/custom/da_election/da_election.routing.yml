@@ -21,3 +21,27 @@ entity.da_election.canonical:
     _title: 'Election'
   requirements:
     _access: 'TRUE'
+
+entity.da_candidacy.add_form:
+  path: '/candidacy/add'
+  defaults:
+    _entity_form: 'da_candidacy'
+    _title: 'Add Candidacy'
+  requirements:
+    _permission: 'add candidacy entity'
+
+entity.da_candidacy.edit_form:
+  path: '/candidacy/{da_candidacy}/edit'
+  defaults:
+    _entity_form: 'da_candidacy.edit'
+    _title: 'Edit Candidacy'
+  requirements:
+    _permission: 'edit candidacy entity'
+
+entity.da_candidacy.canonical:
+  path: '/candidacy/{da_candidacy}'
+  defaults:
+    _entity_view: 'da_candidacy'
+    _title: 'Election'
+  requirements:
+    _access: 'TRUE'
