@@ -13,17 +13,24 @@ targetEntityType: node
 bundle: legal_framework
 mode: default
 content:
+  addtoany:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_legal_paragraph:
     type: entity_reference_revisions_entity_view
-    weight: 102
-    label: above
+    weight: 1
+    label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
     region: content
   links:
-    weight: 100
+    weight: 0
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   langcode: true

@@ -19,6 +19,7 @@
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.2",
+        "drupal/addtoany": "^1.8",
         "drupal/console": "~1.0",
         "drupal/core": "~8.0",
         "drupal/disqus": "^1.0@RC",
