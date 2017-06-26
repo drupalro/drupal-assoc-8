@@ -1,4 +1,5 @@
 module:
+  addtoany: 0
   automated_cron: 0
   block: 0
   block_content: 0
@@ -11,9 +12,8 @@ module:
   contextual: 0
   da_calendar: 0
   da_election: 0
-  da_view_reference_field: 0
-  da_calendar: 0
   da_member_subscription: 0
+  da_view_reference_field: 0
   datetime: 0
   dblog: 0
   disqus: 0

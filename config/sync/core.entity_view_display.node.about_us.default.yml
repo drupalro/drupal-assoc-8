@@ -16,22 +16,27 @@ targetEntityType: node
 bundle: about_us
 mode: default
 content:
+  addtoany:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     region: content
   field_board_members:
-    weight: 104
+    weight: 3
     label: above
     settings: {  }
     third_party_settings: {  }
     type: field_view_reference_display
     region: content
   field_legal_framework:
-    weight: 103
+    weight: 2
     label: above
     settings:
       view_mode: default
@@ -40,7 +45,7 @@ content:
     type: entity_reference_entity_view
     region: content
   links:
-    weight: 100
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }

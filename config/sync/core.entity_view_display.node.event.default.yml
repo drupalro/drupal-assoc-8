@@ -23,6 +23,11 @@ targetEntityType: node
 bundle: event
 mode: default
 content:
+  addtoany:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   body:
     label: inline
     type: text_default
