@@ -6,10 +6,13 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.field_comments
     - field.field.node.article.field_image
+    - field.field.node.article.field_meta_tags
+    - field.field.node.article.field_yoast_seo
     - node.type.article
   module:
     - disqus
     - image
+    - metatag
     - text
     - user
 id: node.article.default
@@ -44,6 +47,21 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
+  field_meta_tags:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_yoast_seo:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   links:
     weight: 0
