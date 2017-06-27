@@ -1,0 +1,10 @@
+uuid: b5d74f15-b1cf-4ff7-b605-5d6095998246
+langcode: en
+status: true
+dependencies:
+  module:
+    - da_election
+id: da_election.token
+label: Token
+targetEntityType: da_election
+cache: true
