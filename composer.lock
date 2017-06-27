@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2813dc02a4af9f33e0ea4e32acfce3e1",
+    "content-hash": "45d7d91e0b70e1882e17b675c58df0ad",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1120,7 +1120,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/addtoany-8.x-1.8.zip",
-                "reference": null,
+                "reference": "8.x-1.8",
                 "shasum": "fc3fc0193cb2fd434c0d4112f99287b72f233a41"
             },
             "require": {
@@ -1158,6 +1158,109 @@
             "homepage": "https://www.drupal.org/project/addtoany",
             "support": {
                 "source": "http://cgit.drupalcode.org/addtoany"
+            }
+        },
+        {
+            "name": "drupal/admin_toolbar",
+            "version": "1.19.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/admin_toolbar",
+                "reference": "8.x-1.19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.19.zip",
+                "reference": null,
+                "shasum": "87de41eab3c5cd49d4e1b5b764cb3b9d5ad683a0"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.19",
+                    "datestamp": "1491487683"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Mohamed Anis Taktak",
+                    "homepage": "https://www.drupal.org/u/matio89"
+                },
+                {
+                    "name": "eme",
+                    "homepage": "https://www.drupal.org/user/542492"
+                },
+                {
+                    "name": "fethi.krout",
+                    "homepage": "https://www.drupal.org/user/3206765"
+                },
+                {
+                    "name": "matio89",
+                    "homepage": "https://www.drupal.org/user/2320090"
+                },
+                {
+                    "name": "romainj",
+                    "homepage": "https://www.drupal.org/user/370706"
+                }
+            ],
+            "description": "Admin Toolbar improve the default Drupal Toolbar, it lets the hover of sub menus.",
+            "homepage": "http://drupal.org/project/admin_toolbar",
+            "support": {
+                "source": "http://cgit.drupalcode.org/admin_toolbar",
+                "issues": "https://www.drupal.org/project/issues/admin_toolbar"
+            }
+        },
+        {
+            "name": "drupal/checklistapi",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/checklistapi",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/checklistapi-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "d6b6889548adff2f5598b6f6eef5f9574942b0cd"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1484926084"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "TravisCarden",
+                    "homepage": "https://www.drupal.org/user/236758"
+                }
+            ],
+            "description": "Provides an API for creating fillable, persistent checklists.",
+            "homepage": "https://www.drupal.org/project/checklistapi",
+            "support": {
+                "source": "http://cgit.drupalcode.org/checklistapi"
             }
         },
         {
@@ -1889,6 +1992,58 @@
             "homepage": "https://www.drupal.org/project/paragraphs",
             "support": {
                 "source": "http://cgit.drupalcode.org/paragraphs"
+            }
+        },
+        {
+            "name": "drupal/seo_checklist",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/seo_checklist",
+                "reference": "8.x-4.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/seo_checklist-8.x-4.0.zip",
+                "reference": "8.x-4.0",
+                "shasum": "12b8bb6ae00172008225c3d9f173bbf62ce2213c"
+            },
+            "require": {
+                "drupal/checklistapi": "*",
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-4.x": "4.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-4.0",
+                    "datestamp": "1479573239"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Finklea",
+                    "homepage": "https://www.drupal.org/user/46676"
+                },
+                {
+                    "name": "TravisCarden",
+                    "homepage": "https://www.drupal.org/user/236758"
+                }
+            ],
+            "description": "Uses best practices to check for proper search engine optimization.",
+            "homepage": "https://www.drupal.org/project/seo_checklist",
+            "keywords": [
+                "SEO"
+            ],
+            "support": {
+                "source": "http://drupalcode.org/seo_checklist",
+                "issues": "https://www.drupal.org/project/issues/seo_checklist"
             }
         },
         {
