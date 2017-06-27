@@ -28,6 +28,7 @@
         "drupal/nexus": "1.0.0-beta1",
         "drupal/paragraphs": "^1.1",
         "drupal/pathauto": "^1.0",
+        "drupal/redirect": "^1.0@alpha",
         "drupal/seo_checklist": "^4.0",
         "drush/drush": "~8.0",
         "webflo/drupal-finder": "^0.2.1",
