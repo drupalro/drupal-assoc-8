@@ -8,3 +8,5 @@ id: global
 label: Global
 tags:
   title: '[current-page:title] | [site:name]'
+  shortlink: '[current-page:url:unaliased]'
+  canonical_url: '[current-page:url:absolute]'
