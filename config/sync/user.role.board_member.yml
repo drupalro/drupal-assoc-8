@@ -6,4 +6,6 @@ id: board_member
 label: 'Board member'
 weight: 4
 is_admin: null
-permissions: {  }
+permissions:
+  - 'administer yoast seo'
+  - 'use yoast seo'

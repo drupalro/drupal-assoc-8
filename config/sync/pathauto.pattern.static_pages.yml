@@ -1,0 +1,23 @@
+uuid: 95fe4c86-2416-45d2-ba33-2dc85b8e9e5f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: static_pages
+label: 'Static Pages'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  bdb541fd-9837-4543-ae3f-149324dc1b8e:
+    id: node_type
+    bundles:
+      about_us: about_us
+      legal_framework: legal_framework
+    negate: false
+    context_mapping:
+      node: node
+    uuid: bdb541fd-9837-4543-ae3f-149324dc1b8e
+selection_logic: and
+weight: -5
+relationships: {  }
