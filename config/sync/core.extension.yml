@@ -13,6 +13,7 @@ module:
   contextual: 0
   ctools: 0
   da_calendar: 0
+  da_contact: 0
   da_election: 0
   da_member_subscription: 0
   da_view_reference_field: 0

@@ -1,0 +1,7 @@
+name: 'Drupal Association Contact'
+type: module
+description: 'This module provides features for contacting the association.'
+package: Drupal Association
+core: 8.x
+dependencies:
+  - contact
