@@ -1,0 +1,118 @@
+uuid: 9e61d453-4461-4b39-96ce-e381feaede9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - search_api.server.content
+  module:
+    - search_api
+    - node
+id: content
+name: Content
+description: ''
+read_only: false
+field_settings:
+  nid:
+    label: ID
+    datasource_id: 'entity:node'
+    property_path: nid
+    type: integer
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+  body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  uid:
+    label: 'Authored by'
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: false
+      selected:
+        - en
+processor_settings:
+  aggregated_field: {  }
+  rendered_item: {  }
+  html_filter:
+    all_fields: false
+    fields:
+      - title
+      - body
+      - type
+    title: true
+    alt: true
+    tags:
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+      b: 2
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+  highlight:
+    highlight: always
+    highlight_partial: true
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
+  tokenizer:
+    all_fields: false
+    fields:
+      - title
+      - body
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
+  add_url: {  }
+  transliteration:
+    all_fields: false
+    fields:
+      - title
+      - body
+      - type
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  ignorecase:
+    all_fields: false
+    fields:
+      - title
+      - body
+      - type
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+tracker_settings:
+  default: {  }
+options:
+  index_directly: true
+  cron_limit: 50
+server: content

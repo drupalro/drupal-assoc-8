@@ -33,6 +33,7 @@
         "drupal/redirect": "^1.0@alpha",
         "drupal/simple_sitemap": "^2.9",
         "drupal/yoast_seo": "^1.2",
+        "drupal/search_api": "^1.1",
         "drush/drush": "~8.0",
         "webflo/drupal-finder": "^0.2.1",
         "webmozart/path-util": "^2.3"
