@@ -1,0 +1,23 @@
+uuid: 7d407d16-fb74-4671-9738-ae0e57aebab4
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search_content
+  module:
+    - views
+  theme:
+    - da
+id: exposedformsearch_contentcontent_search
+theme: da
+region: header
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:search_content-content_search'
+settings:
+  id: 'views_exposed_filter_block:search_content-content_search'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility: {  }
