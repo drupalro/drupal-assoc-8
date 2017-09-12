@@ -1,0 +1,55 @@
+uuid: f0d37501-cd87-4930-a767-beb52cce07a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - da_poll.da_poll_type.election
+    - field.field.da_poll.election.field_active_election
+    - field.field.da_poll.election.field_election_end_date
+    - field.field.da_poll.election.field_election_start_date
+  module:
+    - datetime
+id: da_poll.election.default
+targetEntityType: da_poll
+bundle: election
+mode: default
+content:
+  field_active_election:
+    weight: 3
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_election_end_date:
+    weight: 2
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_election_start_date:
+    weight: 1
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  name:
+    label: above
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  user_id: true

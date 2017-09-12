@@ -1,6 +1,0 @@
-name: Drupal Association Election
-type: module
-package: Drupal Association
-core: 8.x
-dependencies:
-  - views

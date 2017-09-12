@@ -1,0 +1,3 @@
+services:
+  da_poll.service:
+    class: Drupal\da_poll\Controller\PollController

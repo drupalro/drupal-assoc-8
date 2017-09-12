@@ -1,0 +1,7 @@
+name: Drupal Association Poll
+description: Implements polls for Drupal Association.
+type: module
+package: Drupal Association
+core: 8.x
+dependencies:
+  - views

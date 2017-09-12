@@ -1,0 +1,18 @@
+uuid: fef835ed-2922-4290-b547-6b34baece41a
+langcode: en
+status: true
+dependencies:
+  module:
+    - da_poll
+id: da_poll.field_active_election
+field_name: field_active_election
+entity_type: da_poll
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

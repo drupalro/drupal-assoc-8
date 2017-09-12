@@ -1,0 +1,22 @@
+# Poll routing definition
+
+entity.da_poll.canonical:
+  route_name: entity.da_poll.canonical
+  base_route: entity.da_poll.canonical
+  title: 'View'
+
+entity.da_poll.edit_form:
+  route_name: entity.da_poll.edit_form
+  base_route: entity.da_poll.canonical
+  title: 'Edit'
+
+entity.da_poll.version_history:
+  route_name: entity.da_poll.version_history
+  base_route: entity.da_poll.canonical
+  title: 'Revisions'
+
+entity.da_poll.delete_form:
+  route_name:  entity.da_poll.delete_form
+  base_route:  entity.da_poll.canonical
+  title: Delete
+  weight: 10
