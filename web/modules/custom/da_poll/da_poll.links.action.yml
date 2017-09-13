@@ -1,0 +1,10 @@
+entity.da_poll.add_form:
+  route_name: 'entity.da_poll.add_page'
+  title: 'Add Poll'
+  appears_on:
+    - entity.da_poll.collection
+entity.da_poll_type.add_form:
+  route_name: 'entity.da_poll_type.add_form'
+  title: 'Add Poll type'
+  appears_on:
+    - entity.da_poll_type.collection

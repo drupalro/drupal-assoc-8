@@ -1,0 +1,22 @@
+# Polls menu base.
+da_poll_base_structure_menu:
+  title: 'Polls administration'
+  description: 'Manage all configurations related to Polls for Drupal Association.'
+  route_name: da_poll.base_menu
+  parent: system.admin_structure
+
+# Poll menu items definition
+entity.da_poll.collection:
+  title: 'Poll list'
+  route_name: entity.da_poll.collection
+  description: 'List Poll entities'
+  parent: da_poll_base_structure_menu
+  weight: 100
+
+# Poll type menu items definition
+entity.da_poll_type.collection:
+  title: 'Poll type'
+  route_name: entity.da_poll_type.collection
+  description: 'List Poll type (bundles)'
+  parent: da_poll_base_structure_menu
+  weight: 99

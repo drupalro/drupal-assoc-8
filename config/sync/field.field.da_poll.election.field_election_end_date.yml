@@ -1,0 +1,21 @@
+uuid: a661571c-c622-4b0f-bfa4-def1b66ca33d
+langcode: en
+status: true
+dependencies:
+  config:
+    - da_poll.da_poll_type.election
+    - field.storage.da_poll.field_election_end_date
+  module:
+    - datetime
+id: da_poll.election.field_election_end_date
+field_name: field_election_end_date
+entity_type: da_poll
+bundle: election
+label: 'Election End Date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

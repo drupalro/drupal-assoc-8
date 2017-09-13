@@ -1,0 +1,23 @@
+uuid: 8f8f8519-9921-4f2f-af44-7cc090a80ac2
+langcode: en
+status: true
+dependencies:
+  config:
+    - da_poll.da_poll_type.election
+    - field.storage.da_poll.field_active_election
+id: da_poll.election.field_active_election
+field_name: field_active_election
+entity_type: da_poll
+bundle: election
+label: 'Active Election'
+description: 'Check to set this election as the active election. Only one election can be active at the time.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

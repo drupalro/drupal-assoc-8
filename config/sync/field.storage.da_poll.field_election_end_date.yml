@@ -1,0 +1,20 @@
+uuid: 62d204ef-df61-4e31-98db-3e2d4a2e7127
+langcode: en
+status: true
+dependencies:
+  module:
+    - da_poll
+    - datetime
+id: da_poll.field_election_end_date
+field_name: field_election_end_date
+entity_type: da_poll
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

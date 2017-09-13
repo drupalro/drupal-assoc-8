@@ -1,0 +1,70 @@
+<?php
+
+/**
+ * @file
+ * Contains da_poll.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function da_poll_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the da_poll module.
+    case 'help.page.da_poll':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function da_poll_theme() {
+  $theme = [];
+  $theme['da_poll'] = array(
+    'render element' => 'elements',
+    'file' => 'da_poll.page.inc',
+    'template' => 'da_poll',
+  );
+  $theme['da_poll_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'da_poll.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function da_poll_theme_suggestions_da_poll(array $variables) {
+  $suggestions = array();
+  $entity = $variables['elements']['#da_poll'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'da_poll__' . $sanitized_view_mode;
+  $suggestions[] = 'da_poll__' . $entity->bundle();
+  $suggestions[] = 'da_poll__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'da_poll__' . $entity->id();
+  $suggestions[] = 'da_poll__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}
+
+/**
+ * Deletes system.schema entry for module which doesn't exist anymore.
+ */
+function da_poll_update_8301() {
+  $key_value_database_service = \Drupal::getContainer()
+    ->get('keyvalue.database');
+  $storage = $key_value_database_service->get('system.schema');
+  $storage->delete('da_election');
+  $storage->delete('checklistapi');
+  $storage->delete('seo_checklist');
+}
