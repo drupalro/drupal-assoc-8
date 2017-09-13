@@ -56,3 +56,15 @@ function da_poll_theme_suggestions_da_poll(array $variables) {
   $suggestions[] = 'da_poll__' . $entity->id() . '__' . $sanitized_view_mode;
   return $suggestions;
 }
+
+/**
+ * Deletes system.schema entry for module which doesn't exist anymore.
+ */
+function da_poll_update_8301() {
+  $key_value_database_service = \Drupal::getContainer()
+    ->get('keyvalue.database');
+  $storage = $key_value_database_service->get('system.schema');
+  $storage->delete('da_election');
+  $storage->delete('checklistapi');
+  $storage->delete('seo_checklist');
+}
