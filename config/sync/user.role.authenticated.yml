@@ -17,4 +17,5 @@ permissions:
   - 'search content'
   - 'skip comment approval'
   - 'use text format full_html'
+  - 'view commerce_product'
   - 'view disqus comments'
