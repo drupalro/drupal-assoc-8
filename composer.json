@@ -21,6 +21,7 @@
         "drupal-composer/drupal-scaffold": "^2.2",
         "drupal/addtoany": "^1.8",
         "drupal/admin_toolbar": "^1.19",
+        "drupal/commerce": "2.x-dev",
         "drupal/console": "~1.0",
         "drupal/core": "~8.0",
         "drupal/disqus": "^1.0@RC",
@@ -31,9 +32,9 @@
         "drupal/paragraphs": "^1.1",
         "drupal/pathauto": "^1.0",
         "drupal/redirect": "^1.0@alpha",
+        "drupal/search_api": "^1.1",
         "drupal/simple_sitemap": "^2.9",
         "drupal/yoast_seo": "^1.2",
-        "drupal/search_api": "^1.1",
         "drush/drush": "~8.0",
         "webflo/drupal-finder": "^0.2.1",
         "webmozart/path-util": "^2.3"
