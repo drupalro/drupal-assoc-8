@@ -1,0 +1,20 @@
+uuid: a2f6d2c9-c00a-4022-8c0a-6b41319f135c
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_euplatesc
+id: euplatesc
+label: EuPlatesc
+weight: null
+plugin: euplatesc_checkout
+configuration:
+  merchant_id: '44840984745'
+  secret_key: 7c57877d6a8029c4b75082255f5250cbabcbaeb2
+  redirect_method: post
+  display_label: EuPlatesc
+  mode: test
+  payment_method_types:
+    - credit_card
+conditions: {  }
+conditionOperator: AND

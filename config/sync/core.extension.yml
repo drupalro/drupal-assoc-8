@@ -1,6 +1,5 @@
 module:
-  addtoany: 0
-  admin_toolbar: 0
+  address: 0
   automated_cron: 0
   block: 0
   block_content: 0
@@ -8,20 +7,24 @@ module:
   ckeditor: 0
   color: 0
   comment: 0
+  commerce: 0
+  commerce_cart: 0
+  commerce_checkout: 0
+  commerce_euplatesc: 0
+  commerce_order: 0
+  commerce_payment: 0
+  commerce_price: 0
+  commerce_product: 0
+  commerce_store: 0
   config: 0
   contact: 0
   contextual: 0
-  ctools: 0
-  da_calendar: 0
-  da_contact: 0
-  da_election: 0
-  da_member_subscription: 0
   da_view_reference_field: 0
   datetime: 0
   dblog: 0
-  disqus: 0
   dynamic_page_cache: 0
   editor: 0
+  entity: 0
   entity_reference_revisions: 0
   field: 0
   field_ui: 0
@@ -30,38 +33,31 @@ module:
   google_map_field: 0
   help: 0
   history: 0
-  hreflang: 0
   image: 0
+  inline_entity_form: 0
   language: 0
   link: 0
   locale: 0
   menu_ui: 0
-  metatag: 0
   node: 0
   options: 0
   page_cache: 0
   path: 0
+  profile: 0
   quickedit: 0
   rdf: 0
-  redirect: 0
-  redirect_404: 0
-  rest: 0
-  search_api: 0
-  search_api_db: 0
+  search: 0
   serialization: 0
   shortcut: 0
-  simple_sitemap: 0
+  state_machine: 0
   system: 0
   taxonomy: 0
   text: 0
-  token: 0
   toolbar: 0
   tour: 0
   user: 0
   views_ui: 0
-  yoast_seo: 0
   menu_link_content: 1
-  pathauto: 1
   views: 10
   paragraphs: 11
   da: 1000
