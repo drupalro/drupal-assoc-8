@@ -6,4 +6,10 @@ id: administrator
 label: Administrator
 weight: 2
 is_admin: null
-permissions: {  }
+permissions:
+  - 'administer comments'
+  - 'administer redirect settings'
+  - 'administer redirects'
+  - 'administer sitemap settings'
+  - 'administer yoast seo'
+  - 'use yoast seo'

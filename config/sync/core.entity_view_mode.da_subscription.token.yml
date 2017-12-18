@@ -1,0 +1,10 @@
+uuid: 95e71e06-f5c4-4d2a-bd07-abd23df2f346
+langcode: en
+status: true
+dependencies:
+  module:
+    - da_member_subscription
+id: da_subscription.token
+label: Token
+targetEntityType: da_subscription
+cache: true

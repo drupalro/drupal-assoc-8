@@ -1,0 +1,21 @@
+uuid: 28aae6b4-4092-4787-9615-3f4310fa5aa4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.legal_framework
+  module:
+    - yoast_seo
+id: node.legal_framework.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: legal_framework
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo
