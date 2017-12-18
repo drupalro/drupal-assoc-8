@@ -1,0 +1,12 @@
+uuid: 95305877-248c-4ba3-9edc-6bb69778fcb7
+langcode: en
+status: true
+dependencies: {  }
+id: contact_form
+label: 'Contact form'
+recipients:
+  - lbene@pitechplus.com
+reply: ''
+weight: 0
+message: ''
+redirect: ''

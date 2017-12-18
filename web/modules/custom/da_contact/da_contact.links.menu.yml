@@ -1,0 +1,5 @@
+da_contact.menu_contact:
+  title: Contact
+  parent: main
+  menu_name: main
+  route_name: contact.site_page

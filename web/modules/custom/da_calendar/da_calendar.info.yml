@@ -1,0 +1,9 @@
+name: 'Drupal Association Calendar'
+type: module
+description: 'This module provides the integration of fullcalendar.io library.'
+package: Drupal Association
+core: 8.x
+libraries:
+  -da_calendar/fullcalendar
+dependencies:
+  - block

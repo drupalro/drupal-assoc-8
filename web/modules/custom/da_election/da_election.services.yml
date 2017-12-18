@@ -1,0 +1,4 @@
+services:
+  da_election.service:
+    class: Drupal\da_election\Controller\ElectionController
+    arguments: []
