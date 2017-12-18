@@ -75,5 +75,6 @@ content:
     type: datetime_default
     region: content
 hidden:
+  field_image: true
   langcode: true
   links: true

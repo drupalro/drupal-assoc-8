@@ -9,9 +9,12 @@ label: 'Authenticated user'
 weight: 1
 is_admin: false
 permissions:
+  - 'access cart'
+  - 'access checkout'
   - 'access comments'
   - 'access content'
   - 'access shortcuts'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
+  - 'view commerce_product'

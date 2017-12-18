@@ -1,0 +1,9 @@
+uuid: 42eb760d-3875-4f6c-9a88-d7d20d6412a1
+langcode: en
+status: true
+dependencies: {  }
+currencyCode: RON
+name: 'Romanian Leu'
+numericCode: '946'
+symbol: RON
+fractionDigits: 2

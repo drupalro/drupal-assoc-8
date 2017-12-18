@@ -9,6 +9,9 @@ label: 'Anonymous user'
 weight: 0
 is_admin: false
 permissions:
+  - 'access cart'
+  - 'access checkout'
   - 'access comments'
   - 'access content'
   - 'search content'
+  - 'view commerce_product'
